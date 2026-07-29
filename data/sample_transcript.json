@@ -1,0 +1,13 @@
+{
+  "segments": [
+    {"start": 0, "end": 18, "text": "Welcome to this practical introduction to retrieval augmented generation. We will build intuition before looking at a small pipeline."},
+    {"start": 18, "end": 42, "text": "A language model can answer fluently, but its parameters may not contain recent or private facts. Retrieval supplies relevant evidence at question time."},
+    {"start": 42, "end": 67, "text": "The first stage splits source documents into useful chunks. Chunk size matters because tiny fragments lose context while large fragments dilute relevance."},
+    {"start": 67, "end": 93, "text": "An embedding model converts every chunk and the user question into vectors. Similar vectors are candidates, not proof that an answer is correct."},
+    {"start": 93, "end": 121, "text": "Now we retrieve the nearest passages. Metadata filters for date, department, or access permissions can improve both precision and safety."},
+    {"start": 121, "end": 148, "text": "The prompt tells the model to answer only from retrieved context and cite its evidence. This reduces unsupported claims but does not eliminate them."},
+    {"start": 148, "end": 177, "text": "Evaluation needs a representative question set. Measure retrieval recall separately from answer faithfulness so a failure can be diagnosed."},
+    {"start": 177, "end": 205, "text": "Useful production monitoring includes latency, empty retrievals, citation coverage, user feedback, and changes in source freshness."},
+    {"start": 205, "end": 231, "text": "To recap: prepare documents, embed chunks, retrieve with filters, generate from evidence, and evaluate every stage. Start small and inspect real failures."}
+  ]
+}
